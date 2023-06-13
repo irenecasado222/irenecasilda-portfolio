@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans:wght@300&display=swap&family=Open+Sans:wght@300..800&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+
+}
+
+nav,
+header,
+main
+
+ {
+    width: 100vw;
+    padding: 0 8.33vw;
+}
+
+section, video {width: 100%;}
+
+
+
+header {
+    height: 62vh;
+    text-align: center;
+}
+
+.mostrar {
+
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 19vh;
+    left: 0vw;
+    background-color: black;
+    width: 100vw;
+    padding: 2vw;
+
+
+
+}
+
+
+nav {
+    color: blue;
+    background-color: pink;
+    height: 19vh;
+    padding: 0 8.33vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+}
+
+nav div {
+    width: 24%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+nav a,
+nav h1,
+header h3,
+header h1 {
+
+    line-height: 125%;
+    vertical-align: top;
+    font-size: 40px;
+
+
+}
+
+
+
+header h3 {
+    color: blue;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 16px;
+    text-align: justify;
+}
+
+main section div {
+    width: 45.83%;
+}
+
+section div img {
+    width: 100%;
+    display: flex;
+}
+
+main  section:first-child {
+    justify-content:space-between;
+    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+
+
+header h1 {
+    margin: 0;
+    animation-name: miAnimacion;
+    animation-duration: 3s;
+    animation-iteration-count:initial;
+    animation-delay: 1s;
+    animation-timing-function: ease-in-out;
+    font-weight: 900;
+    font-style: oblique;
+
+    
+}
+
+@keyframes miAnimacion {
+    from{transform: translateX(-300px);}
+
+    to{transform: translateX(10px);}
+}
+
+header h3 {
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+header p,
+nav a,
+header a {
+    font-size: 20px;
+}
+
+nav a{
+    color: blue;
+
+}
+
+header a {
+    color: black;
+    text-transform: capitalize;
+}
+
+header p {
+    text-align: left;
+}
+nav span {
+    display: none;
+}
+
+/*lo hago desaparecer*/
+
+
+.icon-menu,
+.icon-icono-1,
+.icon-icono-2 {
+    /*
+    color: red;*/
+    font-size: 5vw;
+
+}
+
+.icon-menu:hover {
+    color: blue;
+    border: 2px solid #DCFF15;
+    cursor: pointer;;
+    /*implementamos la mano*/
+}
+
+
+button {
+    color: blue;
+    background-color: #DCFF15;
+    border-style:solid;
+    border-color: rgb(0, 51, 255);
+}
+
+
+@media(max-width:992px) {
+
+
+    nav div {
+        width: 40%;
+    }
+
+
+}
+
+
+
+
+@media (max-width: 768px) {
+
+
+    nav div {
+        display: none;
+    }
+
+    /*lo hago desaparecer*/
+
+    nav span {
+        display: inline;
+    }
+
+    /*lo vuelo a mostrar*/
+
+
+}
+
+.contacto{
+
+    padding: 5px;
+    width: 200px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    text-align: center; 
+    border: 2px solid blue;
+    margin-bottom: 0px;
+    background-color:#DCFF15 ;
+    font-size: 30px;
+    margin-top: 55px;
+}
+
+.contacto:hover {
+    font-weight: 1000; 
+    font-style: italic;
+    text-align: center;
+    background-color: pink;
+    transition: font-weight 0ms; 
+    border-style:dotted;
+    border-color: rgb(0, 51, 255);
+}
+
+footer {
+    margin-top: 50px;
+    background-color: blue;
+    width: 100%;
+    height: 100px;
+    bottom: 0;
+    left: 0;
+    color: white;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;;
+    font-size: 13 px;
+    position: relative;
+  }
+
+  .imagenes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+
+  video{
+    margin-top: 25px;
+  }
+
+  button:hover{
+    background-color: pink;
+    font-style: italic;
+    font-weight: bold;
+    border-style:dotted;
+    border-color: rgb(0, 51, 255);
+  }
+
+  #navega a:hover{
+    color: white;
+    font-weight: bold;
+  }
+
+.editorial:hover{
+    border: 2px dotted black;
+    
+}
